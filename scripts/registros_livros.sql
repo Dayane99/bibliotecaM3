@@ -21,7 +21,7 @@ INSERT INTO enderecos (cep, rua, numero, complemento, bairro, cidade, estado, pa
 INSERT INTO pessoas (nome, cpf, nacionalidade, email, telefone, genero, data_nascimento, id_enderecos_fk)
 	VALUES
 		('Dayane de Vargas', '12158790955', 'brasileiro', 'dayane.vargas@gmail.com', '41998688770', 'feminino', '2001-08-26', '1'),
-        ('José da Silva', '39481562198', 'brasileiro', 'jose.silva@gmail.com', '41987654321', 'masculino', '1960-03-15', '2'),
+      		('José da Silva', '39481562198', 'brasileiro', 'jose.silva@gmail.com', '41987654321', 'masculino', '1960-03-15', '2'),
 		('Maria Souza', '75832145678', 'brasileiro', 'maria.souza@gmail.com', '41976543210', 'feminino', '1985-09-20', '3'),
 		('John Smith', '12345678901', 'estrangeiro', 'john.smith@gmail.com', '14155528955', 'outro', '1975-05-10', '4'),
 		('Emma Johnson', '09876543210', 'estrangeiro', 'emma.johnson@gmail.com', '14177542097', 'feminino', '1988-11-28', '5'),
@@ -44,19 +44,19 @@ INSERT INTO autores (qtd_livro, bibliografia, data_falecimento, status_atividade
 INSERT INTO funcionarios (cargo, setor, data_admissao, data_desligamento, senha, id_pessoas_fk)
 	VALUES 
 		('gerente','administrativo','2020-04-26', null,'65415898','6'),
-        ('atendimento ao público', 'bibliotecário', '2020-05-02', null, '67918765', '7'),
-        ('auxiliar RH', 'RH', '2020-11-20', null, '51092837', '8'),
-        ('catalogador', 'acervo', '2022-01-05', null, '25876532', '9'),
-        ('tecnico informática', 'informática', '2021-03-10', '2023-07-28', '67898912', '10');
+		('atendimento ao público', 'bibliotecário', '2020-05-02', null, '67918765', '7'),
+	        ('auxiliar RH', 'RH', '2020-11-20', null, '51092837', '8'),
+	        ('catalogador', 'acervo', '2022-01-05', null, '25876532', '9'),
+	        ('tecnico informática', 'informática', '2021-03-10', '2023-07-28', '67898912', '10');
         
 -- dados dados de editoras
 INSERT INTO editoras (nome, cnpj, telefone, id_enderecos_fk)
 	VALUES 
 		('rocco','67428110000120','41988763275','11'),
-        ('intrínseca','03235566000190','41954298705','12'),
-        ('arqueiro','05138689000139','41976099076','13'),
-        ('sextante','13878352000196','41951444318','14'),
-        ('record','15358677000173','41987625274','15');
+	        ('intrínseca','03235566000190','41954298705','12'),
+	        ('arqueiro','05138689000139','41976099076','13'),
+	        ('sextante','13878352000196','41951444318','14'),
+	        ('record','15358677000173','41987625274','15');
         
 -- dados de livros conforme cada autor, editora e funcionário que cadastrou o livro.
 INSERT INTO livros (titulo, ano, genero, qtd_pag, idioma, isbn, edicao, id_autores_fk, id_editoras_fk, id_funcionarios_fk)
