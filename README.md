@@ -6,7 +6,7 @@ Este projeto visa a modelagem de um banco de dados para a criação de uma bibli
 * MySQL foi utilizado para a criação do banco de dados
 * dbDiagram.io foi utilizado para o desenvolvimento da modelagem:
   
-![biblioteca](https://github.com/Dayane99/bibliotecaM3/assets/132092648/9129c804-e2ea-4aeb-bc5e-27f92af20340)
+![biblioteca](./model/biblioteca.png)
 
 # Como usar:
 
